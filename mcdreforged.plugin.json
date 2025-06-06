@@ -9,7 +9,7 @@
   "author": "laman28",
   "link": "https://github.com/Lone-Air/urlparser",
   "dependencies": {
-    "mcdreforged": "^2.3.0",
+    "mcdreforged": "^2.3.0"
   },
   "resources": [
     "LICENSE"
