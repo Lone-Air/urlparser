@@ -12,7 +12,7 @@ def on_user_info(server: PluginServerInterface, info: Info):
             intro = RText("Found new url: ", RColor.dark_green)
             msg = RText(link, RColor.blue) \
                 .c(RAction.open_url, link) \
-                .h(f"§2Click to open: §2{link}")
+                .h(f"§2Click to open: §1{link}")
 
             # Send text
             server.say(intro)
