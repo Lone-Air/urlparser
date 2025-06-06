@@ -9,7 +9,7 @@ def on_user_info(server: PluginServerInterface, info: Info):
     if matches:
         for link in matches:
             # Raw message
-            intro = RText("Found new url(click to open): ", RColor.dark_green)
+            intro = RText("Found new url: ", RColor.dark_green)
             msg = RText(link, RColor.blue) \
                 .c(RAction.open_url, link) \
                 .h(f"§2Click to open: §2{link}")
