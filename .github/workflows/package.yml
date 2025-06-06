@@ -38,22 +38,22 @@ jobs:
         git config user.email "actions@github.com"
         
         # 提交打包的文件到当前分支
-        git add urlparser.mcdr mcdreforged.plugin.json
-        git commit -m "Save mcdr package in branch ${{ github.ref_name }}" || echo "No changes to commit"
-        git push origin ${{ github.ref_name }}
+        #git add urlparser.mcdr mcdreforged.plugin.json
+        #git commit -m "Save mcdr package in branch ${{ github.ref_name }}" || echo "No changes to commit"
+        #git push origin ${{ github.ref_name }}
         
         # 切换到主线分支
         git fetch origin master
         git checkout master
         
         # 将打包好的文件从当前分支合并到主线
-        git checkout ${{ github.ref_name }} -- urlparser.mcdr mcdreforged.plugin.json
+        #git checkout ${{ github.ref_name }} -- urlparser.mcdr mcdreforged.plugin.json
         
         # 添加并提交到主线
-        git add urlparser.mcdr mcdreforged.plugin.json
-        git commit -m "Update mcdr package and mcdreforged.plugin.json from branch ${{ github.ref_name }}"
+        git add urlparser.mcdr #mcdreforged.plugin.json
+        git commit -m "Update mcdr package"
         
         # 推送更改到主线
-        git push origin master
+        git push -u origin master
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
