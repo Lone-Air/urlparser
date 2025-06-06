@@ -1,0 +1,19 @@
+{
+  "id": "urlparser",
+  "version": "1.0.0",
+  "name": "urlparser",
+  "description": {
+    "en_us": "A in-game url parser",
+    "zh_cn": "一个游戏内URL解析器"
+  },
+  "author": "laman28",
+  "link": "https://github.com/Lone-Air/urlparser",
+  "dependencies": {
+    "mcdreforged": "^2.3.0",
+    "kpi": "^1.5.2"
+  },
+  "resources": [
+    "LICENSE",
+    "lang"
+  ]
+}
